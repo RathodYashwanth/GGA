@@ -1,0 +1,177 @@
+
+
+.header{
+    background:#D94A58;
+    margin: 0;
+}
+
+.logo{
+    width: auto;
+    height: 11vh;
+}
+
+.nav{
+  &-header{
+    font-size: 16px;  
+    cursor: pointer;
+  }
+}
+
+.regular{
+  padding: 14px 16px;
+  color: white;
+}
+
+.back-button{
+    padding-top: .8rem;
+}
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #F6A52F;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #F6A52F;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 100;
+    cursor: pointer;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .ipad-desktop{
+    display: inline-block;
+  }
+
+  ion-toolbar{
+    width: 100vw;
+  }
+
+  .toolbar-color{
+    background: #D94A58;
+  }
+
+  .header-elements{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1.5rem;
+  }
+
+  .float-left{
+    float: left;
+    padding-right: 1rem;
+    color: white;
+    font-size: 1rem;
+  }
+
+  .contact{
+    color: white;
+    font-size: 1rem;
+    padding-right: .9rem;
+  }
+
+
+/* iphone 10 */
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 812px) 
+and (-webkit-min-device-pixel-ratio: 3) { 
+  .ipad-desktop{
+    display: none !important;
+    &-non{
+      display: block!important;
+    }
+  }
+
+}
+
+/* iphone 6, 6s, 7 & 8 */
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 667px) 
+and (-webkit-min-device-pixel-ratio: 2) { 
+  .ipad-desktop{
+    display: none !important;
+    &-non{
+      display: block!important;
+    }
+  }
+}
+
+/* ipad */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1023px) {
+    .ipad-desktop{
+      display: none !important;
+      &-non{
+        display: block!important;
+      }
+    }
+    
+}
+
+
+/* desktop */
+@media screen 
+  and (min-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .ipad-desktop-non{
+      display: flex;
+      display: none!important;
+    }
+}
+
+/* desktop */
+@media screen 
+  and (min-device-width: 1440px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .logo{
+      width: auto;
+      height: 14vh;
+  }
+}
+
+/* desktop */
+@media screen 
+  and (min-device-width: 1850px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .logo{
+      width: auto;
+      height: 9vh;
+  }
+}

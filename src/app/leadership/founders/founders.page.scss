@@ -1,0 +1,71 @@
+.card-heading{
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right,rgba(244,107,69, 0.8) , rgba(238,168,73,.8));
+    font-size: 1.6rem;
+}
+
+
+.main-card{
+    margin-right: 4rem;
+    margin-left: 4rem;
+}
+
+.leader-image{
+    width: 100%;
+    height: 19.5rem;
+}
+
+.card-bottom{
+    margin-bottom:2rem;
+}
+
+.leader-card{
+    margin: 0;
+}
+
+//Mobile
+
+/* iphone 10 */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .leader-image{
+        height: 18.5rem;
+    }
+
+}
+
+/* iphone 6, 6s, 7 & 8 */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    .leader-image{
+        height: 18.5rem;
+    }
+}
+
+/* ipad */
+@media only screen 
+  and (min-device-width: 769px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .leader-image{
+        width: 86%;
+        height: 14.5rem;
+    }
+}
+
+/* desktop */
+@media screen 
+  and (min-device-width: 1800px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .leader-image{
+        width: 86%;
+        height: 25.5rem;
+    }
+    
+}

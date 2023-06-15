@@ -1,0 +1,87 @@
+<div fxLayout="row" fxLayout.sm="column" class="ipad-desktop">
+  <div fxFlex="100" class="layout-flex-col">
+    <div fxLayout="row" fxLayout.sm="column" >
+      <div fxFlex="10" class="layout-flex-col navbar-menu header">
+        <div fxLayout="row" fxLayout.sm="column" >
+          <div fxFlex="100" class="layout-flex-col">
+            <img class="logo" src="../assets/images/logo.jpg">
+          </div>
+        </div>
+      </div>
+      <div fxFlex="90" class="layout-flex-col navbar-menu header">
+        <div class="header-elements">
+          <div id="home" class="dropdown">
+            <button  id="homeButton" (click)="navigateTo('home')" class="dropbtn">Home
+            </button>
+          </div>
+          <div id="about" class="dropdown">
+            <button id="aboutButton" (click)="navigateTo('about')" class="dropbtn">About
+            </button>
+          </div>
+          <div id="eventsAndCharity" class="dropdown">
+            <button class="dropbtn">Events & Charity
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a id="galleryButton" (click)="navigateTo('gallery')">Gallery</a>
+              <a id="newsButton" (click)="navigateTo('news')">News</a>
+              <a id="charityButton" (click)="navigateTo('charity')">Charity</a>
+            </div>
+          </div> 
+          <div id="leadership" class="dropdown">
+            <button class="dropbtn">Leadership 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a id="foundersButton" (click)="navigateTo('leadership/founders')">Founders</a>
+              <a id="BDButton" (click)="navigateTo('leadership/board-of-directors')">Board of Directors</a>
+              <a id="NEC" (click)="navigateTo('leadership/new-executive-committee')">New Executive Committee</a>
+              <a id="ECButton" (click)="navigateTo('leadership/executive-committee')">Past Executive Committee</a>
+              <a id="ACButton" (click)="navigateTo('leadership/advisory-committee')">Advisory Committee</a>
+              <a id="OCButton" (click)="navigateTo('leadership/other-committee')">Other Committee</a>
+            </div>
+          </div> 
+          <div id="history" class="dropdown">
+            <button class="dropbtn">History 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a id="GGAHButton" (click)="navigateTo('history')">GGA History</a>
+              <a id="GORHButton" (click)="navigateTo('history/gor-history')">GOR History</a>
+              <a id="GORGButton" (click)="navigateTo('history/gothras')">GOR Gothras</a>
+              <a id="GORFButton" (click)="navigateTo('history/festivals')">GOR Festivals</a>
+            </div>
+          </div> 
+          <div id="member" class="dropdown">
+            <button class="dropbtn">Member 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a id="GGAMButton" (click)="navigateTo('membership/registration')">GGA Membership</a>
+              <a id="GGAVButton" (click)="navigateTo('membership/volunteer')">GGA Volunteer</a>
+            </div>
+          </div> 
+          <div id="contact" class="dropdown">
+            <button id="contactButton" (click)="navigateTo('contact')" class="dropbtn">Contact
+            </button>
+          </div>
+          <div>
+            <ion-button color="secondary" (click)="checkForLogin()">Admin</ion-button>
+            <ion-button color="secondary" (click)="donate()">Donate</ion-button>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="ipad-desktop-non">
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Global Gors Association</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</div>
