@@ -21,6 +21,10 @@ const routes: Routes = [
     loadChildren: () => import('./board-of-directors/board-of-directors.module').then( m => m.BoardOfDirectorsPageModule)
   },
   {
+    path: 'old-advisory-committee',
+    loadChildren: () => import('./old-advisory-committee/old-advisory-committee.module').then( m => m.OldAdvisoryCommitteePageModule)
+  },
+  {
     path: 'executive-committee',
     loadChildren: () => import('./executive-committee/executive-committee.module').then( m => m.ExecutiveCommitteePageModule)
   },

@@ -35,9 +35,14 @@
             <div class="dropdown-content">
               <a id="foundersButton" (click)="navigateTo('leadership/founders')">Founders</a>
               <a id="BDButton" (click)="navigateTo('leadership/board-of-directors')">Board of Directors</a>
-              <a id="NEC" (click)="navigateTo('leadership/new-executive-committee')">New Executive Committee</a>
-              <a id="ECButton" (click)="navigateTo('leadership/executive-committee')">Past Executive Committee</a>
-              <a id="ACButton" (click)="navigateTo('leadership/advisory-committee')">Advisory Committee</a>
+              <a id="Executive" ><button class="dropbtn">Executive Committee 
+                <i class="fa fa-caret-down"></i>
+              </button><div id="Executivecontent"><a id="NEC" (click)="navigateTo('leadership/new-executive-committee')">Current Committee</a>
+                <a id="ECButton" (click)="navigateTo('leadership/executive-committee')">Past(2018-2022)</a></div></a>
+                <a id="Advisory" ><button class="dropbtn">Advisory Committee 
+                  <i class="fa fa-caret-down"></i>
+                </button><div id="Advisorycontent"><a id="NEC" (click)="navigateTo('leadership/advisory-committee')">Current Committee</a>
+                  <a id="ECButton" (click)="navigateTo('leadership/old-advisory-committee')">Past(2018-2022)</a></div></a>
               <a id="OCButton" (click)="navigateTo('leadership/other-committee')">Other Committee</a>
             </div>
           </div> 
