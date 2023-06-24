@@ -75,11 +75,11 @@
   display: none;
   position: absolute;
   right: -160px;
-  bottom: 100px; /* Add this line */
+  bottom: 45px; 
 }
 
 #Executivecontent a {
-  float: none; /* Change this line */
+  float: none; 
   color: black;
   padding: 12px 16px;
   text-decoration: none;
@@ -118,7 +118,7 @@ padding: 0 0 0 16px;
   display: none;
   position: absolute;
   right: -160px;
-  bottom: 35px; /* Add this line */
+  bottom: 0; 
 }
 #Advisorycontent{
   display: none;
@@ -130,7 +130,7 @@ padding: 0 0 0 16px;
   cursor: pointer;
 }
 #Advisorycontent a {
-  float: none; /* Change this line */
+  float: none;
   color: black;
   padding: 12px 16px;
   text-decoration: none;
